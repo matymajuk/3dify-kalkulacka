@@ -5,9 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>3Dify.cz – Kalkulačka 3D tisku</title>
 <style>
-:root{--bg:#111316;--panel:#1b1e23;--panel2:#242830;--orange:#ff7518;--text:#f5f6f7;--muted:#aeb4bd;--line:#343a43}
+:root {
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel2: #f7f7f7;
+  --orange: #ff7518;
+  --text: #202124;
+  --muted: #666666;
+  --line: #e5e5e5;
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(circle at 85% 0%,#292019 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:32px 16px}
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #202124;
+  font: 16px/1.5 system-ui, sans-serif;
+  padding: 32px 16px;
+}
 .wrap{max-width:760px;margin:auto}
 header{display:flex;align-items:center;gap:12px;margin-bottom:32px}
 .logo{width:44px;height:44px;border-radius:12px;background:var(--orange);display:grid;place-items:center;color:#fff;font-weight:900;font-size:17px}
@@ -15,14 +28,27 @@ header{display:flex;align-items:center;gap:12px;margin-bottom:32px}
 .kicker{color:var(--orange);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 h1{font-size:clamp(30px,6vw,46px);line-height:1.08;letter-spacing:-1.4px;margin:8px 0 10px}
 .lead{color:var(--muted);margin:0 0 26px}
-.card{background:rgba(27,30,35,.96);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,4vw,32px);box-shadow:0 18px 55px #0005}
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  padding: clamp(20px, 4vw, 32px);
+  box-shadow: 0 8px 30px #0000000a;
+}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:flex;flex-direction:column;gap:8px}
 label{font-weight:700;font-size:14px}
-input,select{width:100%;border:1px solid var(--line);border-radius:11px;background:var(--panel2);color:var(--text);padding:13px 14px;font:inherit;outline:none}
+input, select {
+  background: #f7f7f7;
+  color: #202124;
+  border: 1px solid #dddddd;
+}
 input:focus,select:focus{border-color:var(--orange);box-shadow:0 0 0 3px #ff751822}
 small{color:var(--muted);font-size:12px}
-.result{margin-top:24px;padding:22px;border-radius:16px;background:linear-gradient(135deg,#292019,#22262d);border:1px solid #684025}
+.result {
+  background: #fff7f0;
+  border: 1px solid #ffdabf;
+}
 .result-top{color:var(--muted);font-size:12px;letter-spacing:1.5px;font-weight:800}
 .price{font-size:clamp(38px,8vw,54px);font-weight:900;letter-spacing:-1.8px;color:var(--orange);margin:3px 0}
 .breakdown{color:var(--muted);font-size:13px}
